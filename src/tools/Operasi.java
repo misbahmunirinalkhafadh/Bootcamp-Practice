@@ -24,7 +24,7 @@ public class Operasi {
             if (i == 0 || i == 1) {
                 fibonasi[i] = i;
             } else {
-                fibonasi[i] = fibonasi[i - 1] + fibonasi[i - 2]; //
+                fibonasi[i] = fibonasi[i - 1] + fibonasi[i - 2];
             }
         }
         for (int i = 0; i < jumlah; i++) {
