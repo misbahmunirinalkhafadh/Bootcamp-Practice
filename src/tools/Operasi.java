@@ -13,8 +13,7 @@ public class Operasi {
 
     /**
      * Operasi untuk menentukan deretan angka fibonacci dengan batas angka
-     *
-     * @param jumlah
+     * @param jumlah untuk menentukan jumlah angka batas deret fibonasi
      * @return
      */
     public String bilFibonacci(int jumlah) {
@@ -38,8 +37,7 @@ public class Operasi {
 
     /**
      * Operasi untuk menentukan bilangan prima atau bukan
-     *
-     * @param angka
+     * @param angka untuk menentukan angka yang akan ditentukan bilangannya 
      * @return
      */
     public String bilPrima(int angka) {
