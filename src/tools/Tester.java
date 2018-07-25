@@ -15,13 +15,10 @@ public class Tester {
     //    Coba.cobaAja();
     //    Coba.cobaLagi();
     //    System.out.println(coba.bintangSegitiga(6));
-        Pecahan pecahan = new Pecahan();
-    //    pecahan.pecahanAngka(9999900);
-        Fibonacci fibonacci = new Fibonacci();
-    //    System.out.println(fibonacci.bilFibonacci(100));
-        Prima prima = new Prima();
-    //    System.out.print(prima.bilPrima(10));
+    //    System.out.prinln(coba.pecahanAngka(9999900));
+    
         Operasi operasi = new Operasi();
-        System.out.println(operasi.perkalianAngka(3, 4));
+        System.out.println(operasi.bilFibonacci(28));
+    //    System.out.print(operasi.bilPrima(10));
     }
 }

@@ -10,25 +10,49 @@ package tools;
  * @author misbah alkhafadh
  */
 public class Operasi {
+
     /**
-     * 
-     * @param first
-     * @param secound
-     * @return 
+     * Operasi untuk menentukan deretan angka fibonacci dengan batas angka
+     *
+     * @param jumlah
+     * @return
      */
-    public int perkalianAngka (int first, int secound) {
-    double hasil=0;
-        for(int i=1; i<=secound; i++) 
-        {
-             = hasil + first; //operasi bilangan POSITIVE
+    public String bilFibonacci(int jumlah) {
+        String hasil = " ";
+        int fibonasi[] = new int[jumlah];
+
+        for (int i = 0; i < jumlah; i++) {
+            if (i == 0 || i == 1) {
+                fibonasi[i] = i;
+            } else {
+                fibonasi[i] = fibonasi[i - 1] + fibonasi[i - 2]; //
+            }
         }
-        
-        for(int i=1; i<=secound*-1; i++)
-        {
-            hasile = hasil + first * -1; //operasi bilangan NEGATIVE di kali dengan -1
+        for (int i = 0; i < jumlah; i++) {
+            if (fibonasi[i] <= jumlah) { 
+                hasil += (fibonasi[i] + " ");
+            }
         }
         return hasil;
     }
-    
-    public int pembagianAngka (int )
+
+    /**
+     * Operasi untuk menentukan bilangan prima atau bukan
+     *
+     * @param angka
+     * @return
+     */
+    public String bilPrima(int angka) {
+        String hasil = "Bukan Bilangan Prima";
+        boolean prima = false;
+        for (int i = 2; i < angka; i++) {
+            if ((angka % i) != 0) {
+                prima = true;
+            }
+        }
+        if (prima) {
+            hasil = "Bilangan Prima";
+        }
+        return hasil;
+    }
 }
