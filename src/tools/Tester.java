@@ -18,7 +18,7 @@ public class Tester {
     //    System.out.prinln(coba.pecahanAngka(9999900));
     
         Operasi operasi = new Operasi();
-        System.out.println(operasi.bilFibonacci(28));
-    //    System.out.print(operasi.bilPrima(10));
+    //    System.out.println(operasi.bilFibonacci(28));
+        System.out.print(operasi.bilPrima(4));
     }
 }
